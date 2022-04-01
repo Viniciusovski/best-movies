@@ -3,7 +3,6 @@ package com.example.bestmovies;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.web.reactive.function.client.WebClient;
 
 import com.example.bestmovies.service.MyService;
 
@@ -20,7 +19,7 @@ public class BestMoviesApplication {
 		
 		System.out.println(service.someRestCall(movie, key).block());
 		
-		
+		//System.out.println(service.callResult(movie, key).block());
 	}
 
 }
